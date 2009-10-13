@@ -1,7 +1,11 @@
+<h2> Mark: <%=h @mark.name %> </h2>
+
 <p>
-  <b>Name:</b>
-  <%=h @mark.name %>
+  <b>Point:</b>
+  x <%=h @mark.geom.x %>
+  y <%=h @mark.geom.y %>
 </p>
+
 
 
 <%= link_to 'Edit', edit_mark_path(@mark) %> |

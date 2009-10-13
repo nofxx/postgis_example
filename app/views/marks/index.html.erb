@@ -3,11 +3,15 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>X</th>
+    <th>Y</th>
   </tr>
 
 <% @marks.each do |mark| %>
   <tr>
     <td><%=h mark.name %></td>
+    <td><%=h mark.geom.x %></td>
+    <td><%=h mark.geom.y %></td>
     <td><%= link_to 'Show', mark %></td>
     <td><%= link_to 'Edit', edit_mark_path(mark) %></td>
     <td><%= link_to 'Destroy', mark, :confirm => 'Are you sure?', :method => :delete %></td>

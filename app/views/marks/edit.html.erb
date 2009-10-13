@@ -1,16 +1,6 @@
 <h1>Editing mark</h1>
 
-<% form_for(@mark) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
+<%= render @mark %>
 
 <%= link_to 'Show', @mark %> |
 <%= link_to 'Back', marks_path %>

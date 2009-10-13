@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  template: template_postgis
+  encoding: unicode
+  database: pgis_development
+  username: postgres
+  password:
+
+
+test:
+  adapter: postgresql
+  template: template_postgis
+  encoding: unicode
+  database: pgis_test
+  username: postgres
+  password:
+
+
+production:
+  adapter: postgresql
+  template: template_postgis
+  encoding: unicode
+  database: pgis_production
+  username: postgres
+  password:

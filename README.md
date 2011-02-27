@@ -63,6 +63,10 @@ debian
     \i /usr/share/postgresql-8.3-postgis/lwpostgis.sql;
     \i /usr/share/postgresql-8.3-postgis/spatial_ref_sys.sql;
 
+ubuntu (10.4) with postgresql 8.4
+    \i /usr/share/postgresql/8.4/contrib/postgis.sql
+    \i /usr/share/postgresql/8.4/contrib/spatial_ref_sys.sql
+
 ubuntu (10.10) with postgresql 8.4
     \i /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql;
     \i /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql;
@@ -82,3 +86,16 @@ Now to finish:
     VACUUM FREEZE;
 
 
+## FAQ
+
+### I can`t find postgis.sql / spatial_ref_sys.sql location. What should i do?
+
+  Well, it's depend on your system.
+
+  * Debian / Ubuntu
+
+        dpkg -L postgresql-VERSION-postgis | egrep "(spatial_ref_sys|postgis).sql"
+
+  * ArchLinux (not tested, but should work)
+
+        pacman -Ql postgis | egrep "(spatial_ref_sys|postgis).sql"

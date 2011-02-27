@@ -99,3 +99,10 @@ Now to finish:
   * ArchLinux (not tested, but should work)
 
         pacman -Ql postgis | egrep "(spatial_ref_sys|postgis).sql"
+
+  * CentOS / Fedora / Redhat / where installed yum ;) (not tested, but should work)
+
+      Install _yum-utils_ which contains _repoquery_, then:
+
+        repoquery --list PACKAGE | egrep "(spatial_ref_sys|postgis).sql"
+

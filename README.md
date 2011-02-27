@@ -71,6 +71,10 @@ osx
     \i /opt/local/postgis/lwpostgis.sql;
     \i /opt/local/postgis/spatial_ref_sys.sql;
 
+os x (10.6) with postgresql 9.0.3 and postgis 1.5.2 installed via homebrew
+    \i /usr/local/Cellar/postgis/1.5.2/share/postgis/postgis.sql;
+    \i /usr/local/Cellar/postgis/1.5.2/share/postgis/spatial_ref_sys.sql;
+
 Now to finish:
 
     GRANT ALL ON geometry_columns TO PUBLIC;

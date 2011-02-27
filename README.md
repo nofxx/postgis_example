@@ -52,20 +52,20 @@ Installing PostGIS is simple:
 Now just find the right path for your OS, some that I know:
 
 arch
-    \i /usr/share/postgresql/contrib/postgis.sql
-    \i /usr/share/postgresql/contrib/spatial_ref_sys.sql
+    \i /usr/share/postgresql/contrib/postgis.sql;
+    \i /usr/share/postgresql/contrib/spatial_ref_sys.sql;
 
 centos x86_64
-    \i /usr/share/pgsql/contrib/lwpostgis-64.sql
-    \i /usr/share/pgsql/contrib/spatial_ref_sys.sql
+    \i /usr/share/pgsql/contrib/lwpostgis-64.sql;
+    \i /usr/share/pgsql/contrib/spatial_ref_sys.sql;
 
 debian
     \i /usr/share/postgresql-8.3-postgis/lwpostgis.sql;
     \i /usr/share/postgresql-8.3-postgis/spatial_ref_sys.sql;
 
 ubuntu (10.4) with postgresql 8.4
-    \i /usr/share/postgresql/8.4/contrib/postgis.sql
-    \i /usr/share/postgresql/8.4/contrib/spatial_ref_sys.sql
+    \i /usr/share/postgresql/8.4/contrib/postgis.sql;
+    \i /usr/share/postgresql/8.4/contrib/spatial_ref_sys.sql;
 
 ubuntu (10.10) with postgresql 8.4
     \i /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql;
@@ -105,4 +105,9 @@ Now to finish:
       Install _yum-utils_ which contains _repoquery_, then:
 
         repoquery --list PACKAGE | egrep "(spatial_ref_sys|postgis).sql"
+
+  * MacOS X (homebrew)
+
+        brew list postgis | egrep "(spatial_ref_sys|postgis).sql"
+
 

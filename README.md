@@ -65,7 +65,7 @@ debian
 
 ubuntu (10.10) with postgresql 8.4
     \i /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql;
-    \i /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql
+    \i /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql;
 
 osx
     \i /opt/local/postgis/lwpostgis.sql;
